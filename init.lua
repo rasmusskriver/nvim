@@ -118,4 +118,13 @@ vim.pack.add({
 require('fzf-lua').setup { fzf_colors = true }
 require('mini.completion').setup {}
 require('quicker').setup {}
-require('gitsigns').setup {}
+require('gitsigns').setup {
+    signcolumn = true,
+    preview_config = {
+    -- Options passed to nvim_open_win
+    style = 'minimal',
+    relative = 'cursor',
+    row = 0,
+    col = 0
+  },
+}
