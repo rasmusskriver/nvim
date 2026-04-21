@@ -47,6 +47,11 @@ vim.keymap.set("n", "<leader>p", function()
 end, { desc = "Find files" })
 
 
+vim.keymap.set("n", "<leader>g", function()
+  require("fzf-lua").git_files()
+end, { desc = "Find files" })
+
+
 vim.keymap.set("n", "<leader>s", function()
   require("fzf-lua").live_grep()
 end, { desc = "Find tmux buffers" })
