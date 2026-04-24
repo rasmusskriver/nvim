@@ -42,14 +42,14 @@ vim.o.list = true -- Show <tab> and trailing spaces.
 -- KEYMAPS
 --
 -- See `:h vim.keymap.set()`, `:h mapping`, `:h keycodes`
-vim.keymap.set("n", "<leader>p", function()
+vim.keymap.set("n", "<leader>pf", function()
   require("fzf-lua").files()
 end, { desc = "Find files" })
 
 
-vim.keymap.set("n", "<leader>g", function()
+vim.keymap.set("n", "<leader>pg", function()
   require("fzf-lua").git_files()
-end, { desc = "Find files" })
+end, { desc = "Find files in git" })
 
 
 vim.keymap.set("n", "<leader>s", function()
