@@ -56,6 +56,10 @@ vim.keymap.set("n", "<leader>s", function()
   require("fzf-lua").live_grep()
 end, { desc = "Find tmux buffers" })
 
+vim.keymap.set("n", "<leader>c", function()
+  require("fzf-lua").colorschemes()
+end, { desc = "Find tmux buffers" })
+
 -- Use <Esc> to exit terminal mode
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 
@@ -113,6 +117,8 @@ vim.pack.add({
   'https://github.com/stevearc/quicker.nvim',
   -- Git integration
   'https://github.com/lewis6991/gitsigns.nvim',
+  -- test at lave plugin
+  'https://github.com/rasmusskriver/present.nvim',
 })
 
 require('fzf-lua').setup { fzf_colors = true }
@@ -121,3 +127,4 @@ require('quicker').setup {}
 require('gitsigns').setup {
     signcolumn = false,
 }
+require('present')
