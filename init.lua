@@ -123,15 +123,12 @@ vim.pack.add({
   'https://github.com/rasmusskriver/present.nvim',
 })
 
-
 --- Theme
 vim.cmd.colorscheme "catppuccin"
 
 require('fzf-lua').setup { fzf_colors = true }
 require('mini.completion').setup {}
 require('quicker').setup {}
-require('gitsigns').setup {
-    signcolumn = false,
-}
+require('gitsigns').setup {}
 
 vim.lsp.enable('lua_ls')
