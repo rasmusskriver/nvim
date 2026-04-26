@@ -46,11 +46,9 @@ vim.keymap.set("n", "<leader>pf", function()
   require("fzf-lua").files()
 end, { desc = "Find files" })
 
-
 vim.keymap.set("n", "<leader>pg", function()
   require("fzf-lua").git_files()
 end, { desc = "Find files in git" })
-
 
 vim.keymap.set("n", "<leader>s", function()
   require("fzf-lua").live_grep()
@@ -59,6 +57,10 @@ end, { desc = "Find tmux buffers" })
 vim.keymap.set("n", "<leader>c", function()
   require("fzf-lua").colorschemes()
 end, { desc = "Find tmux buffers" })
+
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+vim.opt.signcolumn = "yes"
 
 -- Use <Esc> to exit terminal mode
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
