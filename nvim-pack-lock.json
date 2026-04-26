@@ -17,7 +17,7 @@
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "present.nvim": {
-      "rev": "56e08548b83f096d2741c90ab6760b031cacd63d",
+      "rev": "a553be3b815da5dcfcbbb08fc98334cbfddeedd2",
       "src": "https://github.com/rasmusskriver/present.nvim"
     },
     "quicker.nvim": {
