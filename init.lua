@@ -127,9 +127,5 @@ require('quicker').setup {}
 require('gitsigns').setup {
     signcolumn = false,
 }
-require('present')
-
-
-
 
 vim.lsp.enable('lua_ls')
