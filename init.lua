@@ -58,6 +58,13 @@ vim.keymap.set("n", "<leader>c", function()
   require("fzf-lua").colorschemes()
 end, { desc = "Find tmux buffers" })
 
+
+vim.keymap.set("n", "<leader>d", function()
+  require("fzf-lua").diagnostics_document({
+    previewer = false,
+  })
+end, { desc = "Diagnostics (no preview)" })
+
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.opt.signcolumn = "yes"
@@ -132,3 +139,4 @@ require('quicker').setup {}
 require('gitsigns').setup {}
 
 vim.lsp.enable('lua_ls')
+vim.lsp.enable('clangd')
