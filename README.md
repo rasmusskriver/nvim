@@ -1,3 +1,3 @@
-# Omskriv Neovim Config
+# Omskriver Neovim Config
 
-Bygger nu Neovim-konfiguration til Neovim 0.12+, baseret på den indbyggede package manager `vim.pack`
+Bygger ny Neovim-konfiguration til Neovim 0.12+, baseret på den indbyggede package manager `vim.pack`
