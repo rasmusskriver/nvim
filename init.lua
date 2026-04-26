@@ -125,7 +125,7 @@ vim.pack.add({
 
 
 -- --- Theme
--- vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "catppuccin"
 
 require('fzf-lua').setup { fzf_colors = true }
 require('mini.completion').setup {}
