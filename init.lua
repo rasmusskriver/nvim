@@ -124,7 +124,7 @@ vim.pack.add({
 })
 
 
--- --- Theme
+--- Theme
 vim.cmd.colorscheme "catppuccin"
 
 require('fzf-lua').setup { fzf_colors = true }
