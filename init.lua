@@ -134,19 +134,21 @@ vim.pack.add({
 --- Theme
 vim.cmd.colorscheme "catppuccin"
 
+--- setup plugins
 require('nvim-web-devicons').setup {}
 require('fzf-lua').setup { fzf_colors = true }
 require('mini.completion').setup {}
 require('quicker').setup {}
 require('gitsigns').setup {}
 
+--- lua_ls standard neovim config
 vim.lsp.config('lua_ls', {
   on_init = function(client)
     if client.workspace_folders then
       local path = client.workspace_folders[1].name
       if
-        path ~= vim.fn.stdpath('config')
-        and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc'))
+          path ~= vim.fn.stdpath('config')
+          and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc'))
       then
         return
       end
@@ -189,5 +191,11 @@ vim.lsp.config('lua_ls', {
   },
 })
 
+--- Tænder language serverne
+--- lua language server
 vim.lsp.enable('lua_ls')
+--- c language server
 vim.lsp.enable('clangd')
+
+--- format buffer
+--- vim.lsp.buf.format()
