@@ -135,6 +135,7 @@ vim.pack.add({
 --- Theme
 vim.cmd.colorscheme "catppuccin"
 
+require('nvim-web-devicons').setup {}
 require('fzf-lua').setup { fzf_colors = true }
 require('mini.completion').setup {}
 require('quicker').setup {}
