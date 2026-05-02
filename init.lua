@@ -128,6 +128,8 @@ vim.pack.add({
   'https://github.com/lewis6991/gitsigns.nvim',
   -- test at lave plugin
   'https://github.com/rasmusskriver/present.nvim',
+  -- icons
+  'https://github.com/nvim-tree/nvim-web-devicons',
 })
 
 --- Theme
