@@ -41,6 +41,10 @@ vim.o.list = true       -- Show <tab> and trailing spaces.
 -- KEYMAPS
 --
 -- See `:h vim.keymap.set()`, `:h mapping`, `:h keycodes`
+
+-- Fjen punktum funktion
+vim.keymap.set("n", ".", "<Nop>")
+
 vim.keymap.set("n", "<leader>pf", function()
   require("fzf-lua").files()
 end, { desc = "Find files" })
