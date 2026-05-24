@@ -3,6 +3,17 @@
 -- NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 
+--- Fjerne bagvedliggende mellemrum
+local augroup = vim.api.nvim_create_augroup
+local ThePrimeagenGroup = augroup('ThePrimeagen', {})
+local autocmd = vim.api.nvim_create_autocmd
+
+autocmd({"BufWritePre"}, {
+    group = ThePrimeagenGroup,
+    pattern = "*",
+    command = [[%s/\s\+$//e]],
+})
+
 -- OPTIONS
 --
 -- See `:h vim.o`
