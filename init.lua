@@ -199,7 +199,7 @@ vim.lsp.config('lua_ls', {
 --- lua language server
 -- vim.lsp.enable('lua_ls')
 --- c language server
--- vim.lsp.enable('clangd')
+vim.lsp.enable('clangd')
 
 --- Format buffer
 --- vim.lsp.buf.format()
