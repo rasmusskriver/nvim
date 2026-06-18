@@ -53,11 +53,15 @@ vim.o.list = true       -- Show <tab> and trailing spaces.
 --
 -- See `:h vim.keymap.set()`, `:h mapping`, `:h keycodes`
 vim.keymap.set("n", "<leader>do", "<cmd>DiffviewOpen<CR>", {
-  desc = "Open Diffview"
+  desc = "Diffview Open"
 })
 
 vim.keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<CR>", {
-  desc = "Close Diffview"
+  desc = "Diffview Close"
+})
+
+vim.keymap.set("n", "<leader>dr", "<cmd>DiffviewRefresh<CR>", {
+  desc = "Diffview Refresh"
 })
 
 -- Fjen punktum funktion
