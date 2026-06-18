@@ -52,6 +52,9 @@ vim.o.list = true       -- Show <tab> and trailing spaces.
 -- KEYMAPS
 --
 -- See `:h vim.keymap.set()`, `:h mapping`, `:h keycodes`
+vim.keymap.set("n", "<leader>od", "<cmd>DiffviewOpen<CR>", {
+  desc = "Open Diffview"
+})
 
 -- Fjen punktum funktion
 vim.keymap.set("n", ".", "<Nop>")
@@ -144,6 +147,8 @@ vim.pack.add({
   'https://github.com/rasmusskriver/present.nvim',
   -- icons
   'https://github.com/nvim-tree/nvim-web-devicons',
+  -- test af diff view for nvim
+  'https://github.com/sindrets/diffview.nvim',
 })
 
 --- Theme
